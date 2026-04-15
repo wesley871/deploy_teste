@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Formulário de Contato</title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <script src="/javascript/script.js" defer></script>
+    </head>
+    <body>
+        <main class="card">
+            <h1>Deixe seu contato</h1>
+            <form id="contactForm" novalidate>
+                <label for="name">Nome</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Seu nome"
+                    required
+                    minlength="2"
+                />
+
+                <label for="nascimento">Nascimento</label>
+                <input
+                    type="datetime"
+                    id="phone"
+                    name="phone"
+                    placeholder=""
+                    required
+                    pattern=""
+                />
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div
+                id="message"
+                class="msg"
+                role="status"
+                aria-live="polite"
+            ></div>
+        </main>
+
+    </body>
+</html>
