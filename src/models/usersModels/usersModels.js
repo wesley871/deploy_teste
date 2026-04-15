@@ -6,6 +6,12 @@ export function insertUser(nome, nascimento){
     return response;
 }
 
+export function selectAllUsers(){
+    const query = dbSqlite.prepare('SELECT * FROM user');
+    const response = query.all();
+    return response;
+}; 
+
 export function selectUserById(id){
     const query = dbSqlite.prepare('SELECT * FROM user WHERE id = ?;');
     const response = query.get(id);

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Todos os usuários</h1>
+    <% users.forEach(user => { %>
+        <p><%= user.id %> - <%= user.nome %> - <%= user.nascimento %></p>
+    <% }) %>
+</body>
+</html>
