@@ -1,0 +1,23 @@
+{
+  "name": "deploy_teste",
+  "version": "1.0.0",
+  "description": "express_app para teste de deploy",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesley871/deploy_teste.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/wesley871/deploy_teste/issues"
+  },
+  "homepage": "https://github.com/wesley871/deploy_teste#readme"
+}
